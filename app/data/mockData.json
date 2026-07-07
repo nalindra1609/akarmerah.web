@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "AKAR MERAH SEMARANG",
+    "subtitle": "Political Study, Critical Thought, and Collective Action",
+    "description": "Akar Merah adalah organisasi yang berfokus pada kesadaran politik, wacana kritis, dan advokasi melalui produksi pengetahuan."
+  },
+  "divisions": [
+    {
+      "id": "Riset & Kajian Kebijakan",
+      "title": "Research & Scientific Studies",
+      "description": "Fokus pada pengumpulan data, analisis kebijakan, dan produksi pengetahuan kritis.",
+      "programs": ["Forum Diskusi", "Riset Kolektif", "Publikasi Akademik"]
+    },
+    {
+      "id": "Dokumentasi & Propaganda Media",
+      "title": "Media Documentation & Propaganda",
+      "description": "Mengolah wacana kritis menjadi konten visual, propaganda digital, dan pengarsipan gerakan.",
+      "programs": ["Konten Media Sosial", "Desain Kampanye Visual", "Kampanye Digital"]
+    },
+    {
+      "id": "Advokasi & Aksi",
+      "title": "Advocacy & Action",
+      "description": "Turun ke akar rumput, melakukan pendampingan kasus sosial, dan aksi kolektif.",
+      "programs": ["Aksi Massa", "Pendampingan Isu Sosial", "Kampanye Kebijakan Publik"]
+    }
+  ],
+  "structure": [
+    {"name": "Nama Ketua Umum", "position": "Ketua Umum", "message": "Bergerak bersama demi keadilan sosial."},
+    {"name": "Nama Sekretaris Umum", "position": "Sekretaris Umum", "message": "Tertib administrasi, perkuat konsolidasi."},
+    {"name": "Nama Bendahara Umum", "position": "Bendahara Umum", "message": "Transparansi dana untuk keberlanjutan gerakan."},
+    {"name": "Nama Ketua Divisi Riset", "position": "Ketua Divisi Riset dan Kajian Kebijakan", "message": "Tajamkan analisis, produksi pengetahuan kritis."},
+    {"name": "Nama Ketua Divisi Media", "position": "Ketua Divisi Dokumentasi & Propaganda Media", "message": "Suarakan kebenaran lewat propaganda digital."},
+    {"name": "Nama Ketua Divisi Advokasi", "position": "Ketua Divisi Advokasi dan Aksi", "message": "Berdiri bersama rakyat, kawal kebijakan publik."}
+  ],
+  "publications": [
+    {"id": 1, "title": "Menakar Kebijakan Publik Semarang 2026", "category": "Articles", "author": "Divisi Riset", "date": "2026-07-01", "excerpt": "Analisis mendalam mengenai dampak penggusuran lahan digital terhadap ruang publik..."},
+    {"id": 2, "title": "Manifesto Gerakan Akar Merah", "category": "News", "author": "Propaganda Media", "date": "2026-06-15", "excerpt": "Pernyataan sikap resmi organisasi mengenai arah juang politik kontemporer..."},
+    {"id": 3, "title": "Sajak di Ujung Aksi", "category": "Member Works", "author": "Nalin", "date": "2026-05-20", "excerpt": "Deru suara motor beradu dengan teriakan keadilan di bawah terik matahari..."}
+  ],
+  "documents": [
+    {"name": "Anggaran Dasar / Anggaran Rumah Tangga (AD/ART)", "type": "PDF", "size": "1.2 MB"},
+    {"name": "Manifesto Politik Akar Merah v1.0", "type": "PDF", "size": "540 KB"},
+    {"name": "Standard Operating Procedure (SOP) Advokasi", "type": "DOCX", "size": "320 KB"}
+  ],
+  "agenda": [
+    {"title": "Diskusi Publik: Akumulasi Kapital & Ruang Kota", "date": "15 Juli 2026", "status": "Upcoming", "time": "15:00 WIB - Selesai"},
+    {"title": "Riset Kolektif: Dampak Industri terhadap Buruh Kendal", "date": "Juni - Agustus 2026", "status": "Ongoing", "time": "Kondisional"},
+    {"title": "Aksi Damai Solidaritas Petani", "date": "01 Mei 2026", "status": "Past", "time": "Selesai"}
+  ]
+}

@@ -1,3 +1,4 @@
+'use client';
 import data from '../data/mockData.json';
 
 export default function Divisions() {

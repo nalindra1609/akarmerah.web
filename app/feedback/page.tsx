@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 // Mengambil daftar kata kasar dari folder data
-import badWordsList from '@/data/badwords.json';
+import badWordsList from '../../data/badwords.json';
 
 // Struktur data untuk satu kotak surat
 interface FeedbackMessage {

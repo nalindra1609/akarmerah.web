@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="bg-white text-black min-h-screen">
       {/* HERO SECTION */}
-      <section className="relative bg-black text-white py-28 px-6 text-center overflow-hidden border-b-8 border-[#8B0000]">
+      <section className="relative bg-cover bg-center py-28 px-6 text-center border-b border-[#8B0000]" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('/hero-bg.jpg')" }}>
         <div className="relative z-10 max-w-4xl mx-auto">
           <span className="text-[#B22222] font-black tracking-widest text-xs uppercase block mb-3">// Semarang Political Movement</span>
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-white">{hero.title}</h1>

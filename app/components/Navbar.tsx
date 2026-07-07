@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-white rounded-none flex items-center justify-center font-black text-[#8B0000]">AM</div>
+            <img src="/logo.png" alt="Logo Akar Merah" className="h-10 w-auto object-contain" />
             <span className="font-black tracking-widest text-lg">AKAR MERAH</span>
           </div>
 

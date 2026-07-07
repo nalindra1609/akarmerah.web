@@ -1,4 +1,4 @@
-import data from '@/data/mockData.json';
+import data from '../data/mockData.json';
 
 export default function Agenda() {
   return (

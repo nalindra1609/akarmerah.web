@@ -1,4 +1,4 @@
-import data from '@/data/mockData.json';
+import data from './data/mockData.json';
 import Link from 'next/link';
 
 export default function Home() {

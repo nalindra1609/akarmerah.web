@@ -25,12 +25,12 @@
     }
   ],
   "structure": [
-    {"name": "Nama Ketua Umum", "position": "Ketua Umum", "message": "Bergerak bersama demi keadilan sosial."},
-    {"name": "Nama Sekretaris Umum", "position": "Sekretaris Umum", "message": "Tertib administrasi, perkuat konsolidasi."},
+    {"name": "Satria Kusuma Wardhana", "position": "Ketua Umum", "message": "Bergerak bersama demi keadilan sosial."},
+    {"name": "Deykmayudha Ananda Nursyams", "position": "Sekretaris Umum", "message": "Tertib administrasi, perkuat konsolidasi."},
     {"name": "Nama Bendahara Umum", "position": "Bendahara Umum", "message": "Transparansi dana untuk keberlanjutan gerakan."},
-    {"name": "Nama Ketua Divisi Riset", "position": "Ketua Divisi Riset dan Kajian Kebijakan", "message": "Tajamkan analisis, produksi pengetahuan kritis."},
-    {"name": "Nama Ketua Divisi Media", "position": "Ketua Divisi Dokumentasi & Propaganda Media", "message": "Suarakan kebenaran lewat propaganda digital."},
-    {"name": "Nama Ketua Divisi Advokasi", "position": "Ketua Divisi Advokasi dan Aksi", "message": "Berdiri bersama rakyat, kawal kebijakan publik."}
+    {"name": "Rifqia Ulinuha", "position": "Ketua Divisi Riset dan Kajian Kebijakan", "message": "Tajamkan analisis, produksi pengetahuan kritis."},
+    {"name": "Lisa Hasti Palupi", "position": "Ketua Divisi Dokumentasi & Propaganda Media", "message": "Suarakan kebenaran lewat propaganda digital."},
+    {"name": "Muhammad Ipan Alfani", "position": "Ketua Divisi Advokasi dan Aksi", "message": "Berdiri bersama rakyat, kawal kebijakan publik."}
   ],
   "publications": [
     {"id": 1, "title": "Menakar Kebijakan Publik Semarang 2026", "category": "Articles", "author": "Divisi Riset", "date": "2026-07-01", "excerpt": "Analisis mendalam mengenai dampak penggusuran lahan digital terhadap ruang publik..."},

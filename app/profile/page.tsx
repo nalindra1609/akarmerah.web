@@ -3,19 +3,7 @@
 import React from 'react';
 import data from '../data/mockData.json';
 
-// Membuat definisi tipe (interface) agar TypeScript tahu struktur data member,
-// dan menandai bahwa properti 'image' bersifat opsional (?) agar tidak memicu error di Vercel.
-interface StructuralMember {
-  name: string;
-  position: string;
-  message: string;
-  image?: string;
-}
-
 export default function Profile() {
-  // Memastikan data.structure dibaca sesuai dengan tipe data di atas
-  const structures: StructuralMember[] = data.structure;
-
   return (
     <main className="bg-white text-black py-16 px-6 max-w-7xl mx-auto">
       {/* JUDUL HALAMAN */}
@@ -51,38 +39,33 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* STRUKTUR ORGANISASI (YANG SUDAH DI-ROMBAK MENURUN ELEGAN) */}
-      <div className="max-w-4xl mx-auto mt-24">
+      {/* STRUKTUR ORGANISASI (MENURUN, MINIMALIS, BEBAS EROR FOTO) */}
+      <div className="max-w-3xl mx-auto mt-24">
         <h2 className="text-3xl font-black text-center uppercase tracking-wider mb-12 border-b-2 border-[#8B0000] pb-4">
           Struktur Kepengurusan
         </h2>
 
         {/* List Pengurus Menurun Ke Bawah */}
-        <div className="flex flex-col gap-6">
-          {structures.map((member, i) => (
+        <div className="flex flex-col gap-4">
+          {data.structure.map((member, i) => (
             <div 
               key={i}
-              className="bg-white border border-neutral-100 rounded-2xl shadow-sm hover:shadow-xl p-6 flex flex-col md:flex-row items-center gap-6 transition-all duration-500 ease-out transform hover:-translate-y-1 hover:border-[#8B0000]/30"
+              className="bg-white border border-neutral-200 rounded-xl shadow-sm hover:shadow-md p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all duration-300 ease-out border-l-4 hover:border-l-[#8B0000]"
             >
-              {/* Bagian Foto Bulat */}
-              <div className="w-24 h-24 md:w-28 md:h-28 relative flex-shrink-0">
-                <img 
-                  src={member.image || "/avatar-placeholder.jpg"} 
-                  alt={member.name} 
-                  className="w-full h-full rounded-full object-cover border-2 border-[#8B0000] shadow-md"
-                />
-              </div>
-
-              {/* Bagian Informasi Teks */}
-              <div className="text-center md:text-left flex-grow">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#8B0000] bg-[#8B0000]/10 px-3 py-1 rounded-full">
+              {/* Nama & Jabatan */}
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[#8B0000] bg-[#8B0000]/10 px-2 py-0.5 rounded">
                   {member.position}
                 </span>
-                <h3 className="text-xl font-black text-neutral-900 mt-2 tracking-wide">
+                <h3 className="text-lg font-black text-neutral-900 mt-1 tracking-wide">
                   {member.name}
                 </h3>
-                <p className="text-sm italic text-neutral-500 mt-2 font-medium border-l-2 border-neutral-300 pl-3 md:block inline-block">
-                  {member.message}
+              </div>
+
+              {/* Pesan / Quotes Pendek */}
+              <div className="md:max-w-md text-left border-t md:border-t-0 md:border-l border-neutral-200 pt-3 md:pt-0 md:pl-4">
+                <p className="text-xs italic text-neutral-500 font-medium">
+                  "{member.message}"
                 </p>
               </div>
             </div>

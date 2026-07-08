@@ -25,7 +25,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex space-x-6 font-bold text-sm uppercase tracking-wider">
             {menuItems.map((item) => (
-              <Link key={item.name} href={item.href} className="hover:text-black transition-colors duration-200">
+              <Link key={item.name} href={item.href} className="text-white/90 hover:text-white font-bold uppercase tracking-wider text-sm transition-all duration-300 relative pb-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-white after:transition-all after:duration-300">
                 {item.name}
               </Link>
             ))}

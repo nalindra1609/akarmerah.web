@@ -3,7 +3,19 @@
 import React from 'react';
 import data from '../data/mockData.json';
 
+// Membuat definisi tipe (interface) agar TypeScript tahu struktur data member,
+// dan menandai bahwa properti 'image' bersifat opsional (?) agar tidak memicu error di Vercel.
+interface StructuralMember {
+  name: string;
+  position: string;
+  message: string;
+  image?: string;
+}
+
 export default function Profile() {
+  // Memastikan data.structure dibaca sesuai dengan tipe data di atas
+  const structures: StructuralMember[] = data.structure;
+
   return (
     <main className="bg-white text-black py-16 px-6 max-w-7xl mx-auto">
       {/* JUDUL HALAMAN */}
@@ -17,26 +29,29 @@ export default function Profile() {
         <div>
           <h2 className="text-2xl font-black uppercase text-[#8B0000] mb-4">Sejarah & Latar Belakang</h2>
           <p className="text-sm text-gray-700 leading-relaxed mb-4">
-            Akar Merah Semarang didirikan sebagai respon atas gersangnya ruang diskusi kritis dan perlunya wadah intelektual gerakan di ranah akar rumput.
+            Akar Merah Semarang didirikan sebagai respon atas gersangnya ruang diskusi kritis dan perlunya wadah intelektual organik yang independen di kota Semarang. Kami percaya bahwa setiap aksi yang berdampak harus didasari oleh basis teori dan kajian data yang matang.
           </p>
         </div>
-
         <div className="border-4 border-black p-6 bg-neutral-50">
           <h2 className="text-xl font-black uppercase mb-4">// Nilai Inti Gerakan</h2>
           <div className="space-y-4">
             <div>
               <h3 className="font-bold text-sm uppercase text-[#8B0000]">1. Kritis</h3>
-              <p className="text-xs text-gray-600">Selalu mempertanyakan status quo dan menganalisis kebijakan dari kacamata struktural.</p>
+              <p className="text-xs text-gray-600">Selalu mempertanyakan status quo dan menganalisis kebijakan dari kacamata struktural kelas.</p>
             </div>
             <div>
               <h3 className="font-bold text-sm uppercase text-[#8B0000]">2. Kolektif</h3>
-              <p className="text-xs text-gray-600">Bergerak secara horizontal, mengutamakan konsensus dan solidaritas antar elemen.</p>
+              <p className="text-xs text-gray-600">Mengutamakan musyawarah, kerja komunal, dan menolak kepemimpinan yang berwatak otoriter.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-sm uppercase text-[#8B0000]">3. Emansipatoris</h3>
+              <p className="text-xs text-gray-600">Segala bentuk pengetahuan harus ditujukan untuk membebaskan dan membela hak-hak kaum tertindas.</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* STRUKTUR KEPENGURUSAN (YANG SUDAH DI-ROMBAK MENURUN) */}
+      {/* STRUKTUR ORGANISASI (YANG SUDAH DI-ROMBAK MENURUN ELEGAN) */}
       <div className="max-w-4xl mx-auto mt-24">
         <h2 className="text-3xl font-black text-center uppercase tracking-wider mb-12 border-b-2 border-[#8B0000] pb-4">
           Struktur Kepengurusan
@@ -44,9 +59,9 @@ export default function Profile() {
 
         {/* List Pengurus Menurun Ke Bawah */}
         <div className="flex flex-col gap-6">
-          {data.structure.map((member) => (
+          {structures.map((member, i) => (
             <div 
-              key={member.name}
+              key={i}
               className="bg-white border border-neutral-100 rounded-2xl shadow-sm hover:shadow-xl p-6 flex flex-col md:flex-row items-center gap-6 transition-all duration-500 ease-out transform hover:-translate-y-1 hover:border-[#8B0000]/30"
             >
               {/* Bagian Foto Bulat */}
